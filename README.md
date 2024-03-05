@@ -1,8 +1,8 @@
 # ParkMeter
 
- Parking Ticket Management System: Develop a system for tracking and managing parking tickets, including features for payment processing, ticket history, and notifications.
+Parking Ticket Management System: Develop a system for tracking and managing parking tickets, including features for payment processing, ticket history, and notifications.
 
- # Parking Ticket Management System: Detailed Roadmap
+# Parking Ticket Management System: Detailed Roadmap
 
 This document outlines a comprehensive roadmap for developing a parking ticket management system, catering to your college project requirements and incorporating a mock UPI-based payment process for India.
 
@@ -87,7 +87,7 @@ This roadmap outlines the steps involved in developing the backend for your park
 
 * *Install Python:* Ensure you have the latest version of Python installed on your system. Download and install from the official website: [https://www.python.org/downloads/](https://www.python.org/downloads/).
 * *Install Django:* Use pip to install Django: pip install django.
-* *Create Project:* Start a new Django project: django-admin startproject parking_ticket_system.
+* *Create Project:* Start a new Django project: `django-admin startproject parking_ticket_system`.
 * *Create App:* Create a Django app for the core functionalities: python manage.py startapp core.
 * *Configure Settings:* Update the settings.py file in the main project directory to:
     * Specify database details (e.g., database engine, name, user, password).
