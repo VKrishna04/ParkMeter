@@ -1,10 +1,15 @@
 {
     "cSpell.words": [
+        "allauth",
+        "ALPR",
+        "createsuperuser",
         "easypay",
         "makemigrations",
+        "mypy",
         "pytest",
         "Signup",
         "startapp",
         "startproject"
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "basic"
 }
