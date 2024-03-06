@@ -38,12 +38,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # "django.db.backends.sqlite3",
     "core",
     "parking_ticket_system",
     "payments",
     "tickets",
-    "users",
-    "django.db.backends.sqlite3",
+    # "users",
 ]
 
 MIDDLEWARE = [
@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "IST"
+TIME_ZONE = "Asia/Kolkata"
 
 USE_I18N = True
 

@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import ParkingTicket
+from .models import Ticket
 
 # Register your models here.
 
-admin.site.register(ParkingTicket)
+admin.site.register(Ticket)
