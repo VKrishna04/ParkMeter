@@ -2,11 +2,31 @@
 
 Parking Ticket Management System: Develop a system for tracking and managing parking tickets, including features for payment processing, ticket history, and notifications.
 
+
+# Commands to Run the Project Project
+```pwsh
+cd ParkMeter
+venv\Scripts\activate
+cd parking_ticket_system
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
+There are a few scripts that are used to run the project. The first command is used to activate the virtual environment. The second command is used to navigate to the project directory. The third command is used to create the migration files. The fourth command is used to apply the migration files to the database. The fifth command is used to run the server.
+The Project is now running on the local server. You can access the project by going to the following URL: http://127.0.0.1:8000/
+
+The scripts in home directory are still work in progress.
+
+# Credentials for First Administrative Accounts
+* `UserName` - `admin`
+* `password` - `zqxwcevr1234`
+
+* When logging in you can observer a few logs which are purely for testing purpose and demonstrations.
+
 # Project Structure:
 
 `parking_ticket_system: Main` project directory containing manage.py.
 `parking_ticket_system/ (subdirectory)`: Contains Django apps:
-`core`: Handles core functionalities (optional in this simplified version).
 `tickets`: Manages ticket information (vehicle, phone number, license plate, entry/exit times).
 `users`: Manages user accounts (workers) with basic authentication (username, password).
 `parking_ticket_system/parking_ticket_system/`: Contains project-level settings and configuration:
@@ -23,7 +43,7 @@ This document outlines a comprehensive roadmap for developing a parking ticket m
 
 *1. System Design and Overview:*
 
-* *Frontend:* 
+* *Frontend:*
     * *Technologies:* ReactJS for a user-friendly and interactive interface.
     * *Components:*
         * Login/Signup for registered users and guest parking options.
@@ -93,8 +113,8 @@ This document outlines a comprehensive roadmap for developing a parking ticket m
 This roadmap, alongside the mock UPI integration, should provide a solid foundation for developing your parking ticket management system as a college project. Remember to adapt and modify it according to your specific requirements and chosen technologies.
 
 
-# This is our roadmap for backend
-## Detailed Backend Development Roadmap for Parking Ticket Management System
+## This is our roadmap for backend
+### Detailed Backend Development Roadmap for Parking Ticket Management System
 
 This roadmap outlines the steps involved in developing the backend for your parking ticket management system using Python and Django:
 
@@ -109,7 +129,7 @@ This roadmap outlines the steps involved in developing the backend for your park
     * Specify database details (e.g., database engine, name, user, password).
     * Configure secret key for security.
     * Add core app to the INSTALLED_APPS list.
-    - You'll need to update the settings.py file located in the main project directory. 
+    - You'll need to update the settings.py file located in the main project directory.
     - This file holds various configurations for your project, including:
         - *Database details*: Specify the database connection information, such as engine (e.g., MySQL, PostgreSQL), name, username, and password. This allows Django to connect and interact with your chosen database to store data.
         - *Secret key*: Generate a strong, unique secret key using tools like django-utils-secrets.get_secret_key(). This key is crucial for various security features like user sessions and password encryption within your Django application.

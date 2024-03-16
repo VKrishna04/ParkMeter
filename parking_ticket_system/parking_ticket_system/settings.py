@@ -38,12 +38,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # "django.db.backends.sqlite3",
-    "core",
+    "django.db.backends.sqlite3",
     "parking_ticket_system",
     "payments",
     "tickets",
-    # "users",
+    # "users", This is to be added tto gain more control over users, their data and their permissions
 ]
 
 MIDDLEWARE = [

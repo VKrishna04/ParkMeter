@@ -20,6 +20,10 @@ from django.urls import path, include
 
 # Define the URL patterns for the parking_ticket_system project
 urlpatterns = [
+    path(
+        "", admin.site.urls
+    ),  # Develop a landing page here or link it to admin login page.
     path("admin/", admin.site.urls),  # Admin site URL
     path("", include("tickets.urls")),  # Include ticket app URLs (if defined)
+    # path("", include("payment.urls")),  # Include payment app URLs (if defined)
 ]
