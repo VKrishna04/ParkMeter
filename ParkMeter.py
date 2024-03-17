@@ -1,26 +1,21 @@
 import os
 import subprocess
-import sys
-
-
-def run_commands(commands):
-    for command in commands:
-        subprocess.run(command, shell=True)
-
-
-# Check if the platform is Windows
-is_windows = sys.platform == "win32"
 
 
 # Commands to run
 commands = [
     "venv\\Scripts\\activate",
-    "python manage.py makemigrations",
-    "python manage.py migrate",
+    "cd parking_ticket_system",
+    # "python manage.py makemigrations", # Only run this command if you have made changes to the models
+    # "python manage.py migrate",      # Only run this command if you have made changes to the models
     "python manage.py runserver",
 ]
 
 # Run the commands
+print("<--- ", commands[0], " --->")
 subprocess.run(commands[0], shell=True)
-os.chdir(os.path.join(os.getcwd(), "/parking_ticket_system"))
-run_commands(commands[1:-1])
+os.chdir("parking_ticket_system")
+
+for command in commands[1 : len(commands)]:
+    print("<--- ", command, " --->")
+    subprocess.run(command, shell=True)
