@@ -11,6 +11,6 @@ for root, _, files in os.walk(dir_path):
         full_path = os.path.join(root, file)
         if ".git" not in full_path:
             with open("dirpaths.txt", "a") as f:
-                f.write(os.path.join(root, file) + "\n")
+                f.write(os.path.join(root, file) + ",\n")
             # Print the full path of the file
             print(os.path.join(root, file))

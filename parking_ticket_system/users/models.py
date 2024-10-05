@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from decimal import Decimal
+
+# from decimal import Decimal
 import uuid  # for unique Employee IDs
 
 

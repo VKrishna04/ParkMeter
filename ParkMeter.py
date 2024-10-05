@@ -4,7 +4,8 @@ import subprocess
 
 # Commands to run
 commands = [
-    "pip install -r requirements.txt" "venv\\Scripts\\activate",
+    r".venv\Scripts\activate",
+    "where python",  # Check if python is running from the virtual environment or not
     "cd parking_ticket_system",
     # "python manage.py makemigrations", # Only run this command if you have made changes to the models
     # "python manage.py migrate",      # Only run this command if you have made changes to the models

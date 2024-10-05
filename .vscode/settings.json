@@ -51,6 +51,7 @@
         "tzdata",
         "urllib",
         "venv",
+        "virtualenv",
         "wcwidth",
         "Werkzeug",
         "wfdb",
