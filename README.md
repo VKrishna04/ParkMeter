@@ -43,6 +43,10 @@ Access the project at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 ## Administrative Access:
 
+**Admin Interface**:
+   - Register ticket models in the admin panel for ticket management.
+   - Create a superuser to access the admin panel at `/admin/`.
+
 - **Username**: `admin`
 - **Password**: `zqxwcevr1234`
 
@@ -62,17 +66,13 @@ Access the project at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 ## Future Features and Improvements:
 
-1. **Admin Interface**:
-   - Register ticket models in the admin panel for ticket management.
-   - Create a superuser to access the admin panel at `/admin/`.
-
-2. **API Integration (Optional)**:
+1. **API Integration (Optional)**:
    - Integrate the Django REST framework for API interaction.
 
-3. **Payment Processing (Optional)**:
+2. **Payment Processing (Optional)**:
    - Add Stripe or PayPal for handling payments.
 
-4. **Notifications (Optional)**:
+3. **Notifications (Optional)**:
    - Implement email or SMS notifications for pending payments or violations.
 
 ---
