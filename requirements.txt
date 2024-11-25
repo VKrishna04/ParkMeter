@@ -19,7 +19,7 @@ pyperclip==1.8.2
 pytz==2024.1
 requests==2.31.0
 six==1.16.0
-sqlparse==0.4.4
+sqlparse==0.5.0
 types-pytz==2024.1.0.20240203
 urllib3==2.2.1
 Werkzeug==3.0.1
